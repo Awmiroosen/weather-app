@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Style.css" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="container w100 flex-c dark transition">
+      <div class="main-app app-dark transition">
+        <div class="app-header w100 flex-c">
+          <h2>Weather App</h2>
+          <input
+            type="text"
+            id="input"
+            class="app-input dark transition"
+            placeholder="Country Name"
+            autocomplete="false"
+            noreply
+          />
+        </div>
+        <div class="app-main w100 flex">
+          <div class="app-main-country app-container w100 flex-c">
+            <h3 class="country-name"></h3>
+          </div>
+          <div class="app-main-weather app-container w100 flex-c">
+            <h2 class="weather"></h2>
+          </div>
+          <div class="app-main-weather-info app-container w100 flex-c">
+            <p class="weather-info"></p>
+          </div>
+        </div>
+        <div class="app-footer w100 flex-c">
+          <button class="app-btn flex-c dark transition">Get Weather</button>
+          <div class="color-btn flex-c transition">
+            <img src="src/icons/sun.svg" class="color-icon" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="App.js"></script>
+</html>
